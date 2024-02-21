@@ -15,6 +15,7 @@
 | [react-events](https://react.dev/learn#responding-to-events)                            |                                   |                                                                                  |
 | [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)            | npm i / yarn add bootstrap        |                                                                                  |
 | [React-icons](https://react-icons.github.io/react-icons/)                               | npm i / yarn add react-icons      |                                                                                  |
+|  [lifting state up](https://react.dev/learn/sharing-state-between-components)              |                                   |                                                                                  |
 | [props-drilling](https://react.dev/learn#sharing-data-between-components)               |                                   |                                                                                  |
 | [Semantic-Commits](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) |                                   |                                                                                  |
 | Deploy with [Vercel](https://vercel.com/kaplanh)                                        |                                   |                                                                                  |
