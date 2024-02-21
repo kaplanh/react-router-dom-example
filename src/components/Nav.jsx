@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../img/logo.png";
 
-function Nav() {
+function Nav({ user, setUser }) {
     return (
         <nav className="navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
@@ -58,6 +58,26 @@ function Nav() {
                             >
                                 Contact
                             </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            {user ? (
+                                <NavLink
+                                    to="/"
+                                    className="nav-link"
+                                    aria-current="page"
+                                    onClick={() => setUser(false)}
+                                >
+                                    Logout
+                                </NavLink>
+                            ) : (
+                                <NavLink
+                                    to="/login"
+                                    className="nav-link"
+                                    aria-current="page"
+                                >
+                                    Login
+                                </NavLink>
+                            )}
                         </li>
                     </ul>
                 </div>
