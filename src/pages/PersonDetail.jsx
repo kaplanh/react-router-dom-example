@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import { useLocation} from "react-router-dom";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import {useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import NotFound from "./NotFound";
 import spinner from "../img/Spinner-2.gif";
@@ -17,35 +17,35 @@ const PersonDetail = () => {
     const [person, setPerson] = useState({});
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
-    const getPerson = () => {
-        axios(`https://reqres.in/api/users/${id}`)
-            .then((res) => setPerson(res.data.data))
-            .catch((err) => {
-                setError(true);
-                console.log(err);
-            })
-            .finally(() => setLoading(false));
-    };
-    useEffect(() => {
-        getPerson();
-        // eslint-disable-next-line
-        // !warningden kurtulmak icin ya bunu ekleyebilirsin yada 2.yol seklinde yazabilirsin
-    }, []);
-    
-    // !2.yol
-
+    // const getPerson = () => {
+    //     axios(`https://reqres.in/api/users/${id}`)
+    //         .then((res) => setPerson(res.data.data))
+    //         .catch((err) => {
+    //             setError(true);
+    //             console.log(err);
+    //         })
+    //         .finally(() => setLoading(false));
+    // };
     // useEffect(() => {
-    //     const getPerson = () => {
-    //         axios(`https://reqres.in/api/users/${id}`)
-    //             .then((res) => setPerson(res.data.data))
-    //             .catch((err) => {
-    //                 setError(true);
-    //                 console.log(err);
-    //             })
-    //             .finally(() => setLoading(false));
-    //     };
     //     getPerson();
-    // }, [id]);
+    //     // eslint-disable-next-line
+    //     // !warningden kurtulmak icin ya bunu ekleyebilirsin yada 2.yol seklinde yazabilirsin
+    // }, []);
+    
+    // !2.yol id her degistiginde getPerson fonk calistir
+
+    useEffect(() => {
+        const getPerson = () => {
+            axios(`https://reqres.in/api/users/${id}`)
+                .then((res) => setPerson(res.data.data))
+                .catch((err) => {
+                    setError(true);
+                    console.log(err);
+                })
+                .finally(() => setLoading(false));
+        };
+        getPerson();
+    }, [id]);
 
     if (error) {
         return <NotFound />;

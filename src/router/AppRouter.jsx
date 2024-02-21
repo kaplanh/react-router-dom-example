@@ -21,7 +21,7 @@ const AppRouter = () => {
     );
     return (
         <div>
-            <Nav />
+            <Nav user={user} setUser={setUser} />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/paths" element={<Paths />}>
