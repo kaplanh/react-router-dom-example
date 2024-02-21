@@ -543,7 +543,7 @@ export default PersonDetail;
 
 ```
 
-- NavLink  & Link & useNavigate() & <Navigate/> 
+- NavLink  & Link & useNavigate() & Navigate
 
 -   Semantic Commit Messages
     See how a minor change to your commit message style can make you a better programmer.
