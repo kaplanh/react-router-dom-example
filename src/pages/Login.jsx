@@ -10,7 +10,7 @@ const Login = ({ setUser }) => {
         e.preventDefault();
         setUser({ email, password });
         sessionStorage.setItem("user", JSON.stringify({ email, password }));
-        navigate("/");
+        navigate(-1);
         // console.log(email, password);
     };
     return (
