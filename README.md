@@ -1,70 +1,196 @@
-# Getting Started with Create React App
+# React-Router-Dom Example(with Axios)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[:point_right: Click here to see on browser]()
 
-## Available Scripts
+![Tutorial app]()
 
-In the project directory, you can run:
+---
 
-### `npm start`
+| **What's used in this app ?**                                                           | **How use third party libraries** | **Author**                                                                       |
+| --------------------------------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| [React-Router-Dom](https://reactrouter.com/en/main/start/overview)                      | npm i / yarn add react-router-dom | [Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/) |
+| [useEfect() Hook componentDidUpdate()](https://react.dev/learn#using-hooks)             |                                   | [Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)                    |
+| [useState() Hook](https://react.dev/learn#using-hooks)                                  |                                   |                                                                                  |
+| [CRUD OPERATIONS with axios API](https://www.npmjs.com/package/axios#axios-api)         | npm i/yarn add axios              |                                                                                  |
+| [react-events](https://react.dev/learn#responding-to-events)                            |                                   |                                                                                  |
+| [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)            | npm i / yarn add bootstrap        |                                                                                  |
+| [React-icons](https://react-icons.github.io/react-icons/)                               | npm i / yarn add react-icons      |                                                                                  |
+| [props-drilling](https://react.dev/learn#sharing-data-between-components)               |                                   |                                                                                  |
+| [Semantic-Commits](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) |                                   |                                                                                  |
+| Deploy with [Vercel](https://vercel.com/kaplanh)                                        |                                   |                                                                                  |
+| API [fullstack.clarusway](https://tutorial-api.fullstack.clarusway.com/tutorials/)      |                                   |                                                                                  |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How To Run This Project 🚀
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💻 Install React 👇
 
-### `npm run build`
+```bash
+yarn create react-app .  or npx create-react-app .
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💻 Install Sass 👇
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn add sass  or npm i sass
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔴 Delete these files and delete the imports👇
 
-### `npm run eject`
+    - App.test.js
+    - reportWebVitals.js
+    - setupTests.js
+    - favicon.ico
+    - logo192.png
+    - logo512.png
+    - manifest.json
+    - robots.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💻 Start the project 👇
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start or npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+OR
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   <strong>Clone the Repo</strong>
 
-## Learn More
+    ```sh
+    git clone
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   <strong>Install NPM packages</strong>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```sh
+    npm install or yarn
+    ```
 
-### Code Splitting
+-   <strong>Run the project</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```sh
+    npm start or yarn start
+    ```
 
-### Analyzing the Bundle Size
+-   <strong>Open the project on your browser</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```sh
+    http://localhost:3000/
+    ```
 
-### Making a Progressive Web App
+-   ### <strong>Enjoy! 🎉</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Project Skeleton
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+ react-router-dom-example(folder)
+|
+|----public (folder)
+│     └── index.html
+|----src (folder)
+|    |--- components (folder)
+│    │       ├── About.jsx
+│    │       ├── Courses.jsx
+│    │       ├── Footer.jsx
+│    │       ├── Nav.jsx
+│    │
+|    |--- img (folder)
+│    │
+│    |--- pages (folder)
+|    |      ├── Aws.jsx
+|    |      ├── Contact.jsx
+|    |      ├── Fulstack.jsx
+|    |      ├── Home.jsx
+|    |      ├── Logın.jsx
+|    |      ├── Next.jsx
+|    |      ├── NotFound.jsx
+|    |      ├── Paths.jsx
+|    |      ├── People.jsx
+|    |      ├── PersonDetaıl.jsx
+|    |      ├── React.jsx
+|    |
+|    |--- router (folder)
+│    │       ├── AppRouter.jsx
+│    │       ├── PrivateRouter.jsx
+|    |
+|    |
+│    ├--- App.js
+│    ├--- data.js.js
+│    |--- index.js
+│    |--- index.css
+│
+│
+|── .gitignore
+|── package-lock.json
+├── package.json
+|── README.md
+|── yarn.lock
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### At the end of the project, the following topics are to be covered;
+
+-   CRUD(GET with axios)useEffect() (componentDidUpdate() ) & useState() & onChange, onSubmit Events
+
+-
+
+```jsx
+
+```
+
+---
+
+    ```jsx
+
+    ```
+
+-   -
+
+```jsx
+
+```
+
+-   Semantic Commit Messages
+    See how a minor change to your commit message style can make you a better programmer.
+
+    Format: <type>(<scope>): <subject>
+
+    <scope> is optional
+
+    -   Example
+
+    ```
+                feat: add hat wobble
+        ^--^  ^------------^
+        |     |
+        |     +-> Summary in present tense.
+        |
+        +-------> Type: chore, docs, feat, fix, refactor, style, or test.
+    ```
+
+-   More Examples:
+    -   `feat`: (new feature for the user, not a new feature for build script)
+    -   `fix`: (bug fix for the user, not a fix to a build script)
+    -   `docs`: (changes to the documentation)
+    -   `style`: (formatting, missing semi colons, etc; no production code change)
+    -   `refactor`: (refactoring production code, eg. renaming a variable)
+    -   `test`: (adding missing tests, refactoring tests; no production code change)
+    -   `chore`: (updating grunt tasks etc; no production code change)
+
+---
+
+## Feedback and Collaboration
+
+I value your feedback and suggestions. If you have any comments, questions, or ideas for improvement regarding this project or any of my other projects, please don't hesitate to reach out.
+I'm always open to collaboration and welcome the opportunity to work on exciting projects together.
+Thank you for visiting my project. I hope you have a wonderful experience exploring it, and I look forward to connecting with you soon!
+
+<p align="center"> ⌛<strong> Happy Coding </strong> ✍ </p>
